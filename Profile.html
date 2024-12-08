@@ -3,112 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Kumar D - Resume</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Resume - Sai Kumar. D</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .section-title {
-            background-color: #f8f9fa;
-            padding: 10px;
-            border-left: 5px solid #007bff;
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
         }
-        .contact-info, .skills, .education, .experience, .projects {
-            margin-bottom: 20px;
+        header h1 {
+            margin: 0;
         }
-        .project-details {
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section h2 {
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
             margin-bottom: 15px;
         }
-        .footer {
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
             text-align: center;
             padding: 10px 0;
-            margin-top: 20px;
-            background-color: #f8f9fa;
+            background: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0073e6;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="text-center my-4">
-            <h1>Sai Kumar. D</h1>
-            <p>Senior Software Engineer</p>
-            <p>Email: <a href="mailto:saiprakash837@gmail.com">saiprakash837@gmail.com</a> | Phone: 9492741090</p>
-        </header>
+    <header>
+        <h1>Sai Kumar. D</h1>
+        <p><strong>Email:</strong> saiprakash837@gmail.com | <strong>Phone:</strong> 9492741090</p>
+    </header>
+    
+    <section>
+        <h2>Objective</h2>
+        <p>
+            Seeking a challenging and impactful opportunity where I can leverage my strengths and contribute effectively to a professional organization. 
+            With a keen desire to exceed employer expectations, I aim to explore new avenues for growth and innovation.
+        </p>
+    </section>
 
-        <section class="contact-info">
-            <h2 class="section-title">Objective</h2>
-            <p>
-                Seeking a challenging and impactful opportunity where I can leverage my strengths and contribute effectively to a professional organization. With a keen desire to exceed expectations, I aim to drive success and achieve mutual goals.
-            </p>
-        </section>
+    <section>
+        <h2>Summary</h2>
+        <ul>
+            <li>Proficient in <span class="highlight">.NET Framework, .NET Core, and Azure technologies</span>.</li>
+            <li>Experienced in <span class="highlight">C#, SQL Server, Cosmos DB, and Azure API Management</span>.</li>
+            <li>Skilled in application development, UI design, and implementation.</li>
+            <li>Strong expertise in <span class="highlight">Agile methodologies</span> and Continuous Integration (CI).</li>
+        </ul>
+    </section>
 
-        <section class="summary">
-            <h2 class="section-title">Summary</h2>
-            <ul>
-                <li>Proficient in .NET Framework with 7+ years of experience, including .NET Core, ASP.NET, and Web APIs.</li>
-                <li>Skilled in Azure technologies such as Azure API Management, Service Fabric, Functions, and Service Bus.</li>
-                <li>Experienced in C#, SQL Server, Cosmos DB, AJAX, JSON, and XML.</li>
-                <li>Expertise in Application Development, UI Design, and Implementation.</li>
-                <li>Strong in problem-solving, analytical, and interpersonal skills with adherence to coding standards.</li>
-            </ul>
-        </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>IDEs & Tools:</strong> Visual Studio, SQL Server Management Studio, Visual Studio Code</li>
+            <li><strong>Languages:</strong> C#</li>
+            <li><strong>Web Technologies:</strong> ASP.NET, MVC, ADO.NET, Entity Framework</li>
+            <li><strong>Azure Services:</strong> API Management, Service Fabric, Service Bus</li>
+        </ul>
+    </section>
 
-        <section class="technical-skills">
-            <h2 class="section-title">Technical Skills</h2>
-            <ul>
-                <li><strong>IDE’s & Tools:</strong> Visual Studio, SQL Server Management Studio, Visual Studio Code</li>
-                <li><strong>Languages:</strong> C#</li>
-                <li><strong>Web Technologies:</strong> ASP.NET, MVC, Web-API, ADO.NET, Entity Framework</li>
-                <li><strong>Version Control:</strong> SVN, Git</li>
-                <li><strong>Databases:</strong> SQL Server, PostgreSQL, Azure Cosmos DB</li>
-                <li><strong>Azure Services:</strong> Azure API Management, Service Fabric, Functions, Service Bus</li>
-            </ul>
-        </section>
+    <section>
+        <h2>Projects</h2>
+        <h3>Ryder Transport</h3>
+        <ul>
+            <li><strong>Client:</strong> Ryder</li>
+            <li><strong>Duration:</strong> Jan 2023 – May 2024</li>
+            <li><strong>Technologies:</strong> C#, .NET Core Web API, Azure Service Fabric, Cosmos DB</li>
+            <li>Developed and maintained order processes with Service Bus and API management.</li>
+        </ul>
+        
+        <h3>Honeywell Worker Assist</h3>
+        <ul>
+            <li><strong>Client:</strong> Honeywell</li>
+            <li><strong>Role:</strong> Product Specialist</li>
+            <li><strong>Technologies:</strong> .NET, Azure, PostgreSQL</li>
+        </ul>
 
-        <section class="education">
-            <h2 class="section-title">Educational Qualifications</h2>
-            <p>B.Tech in Electronics and Communication, Ramachandra College of Engineering (ELURU), 2015</p>
-        </section>
+        <h3>Quattro</h3>
+        <ul>
+            <li><strong>Client:</strong> MedRisk</li>
+            <li><strong>Role:</strong> Product Specialist</li>
+            <li><strong>Technologies:</strong> ASP.NET MVC, SQL Server</li>
+        </ul>
+    </section>
 
-        <section class="experience">
-            <h2 class="section-title">Professional Experience</h2>
+    <section>
+        <h2>Education</h2>
+        <p><strong>B.Tech in Electronics and Communication</strong><br> Ramachandra College of Engineering, Eluru (2015)</p>
+    </section>
 
-            <div class="project-details">
-                <h4>Prokarma Softech Private Limited - Ryder Transport</h4>
-                <p><strong>Duration:</strong> Jan 2023 - May 2024</p>
-                <p><strong>Client:</strong> Ryder</p>
-                <p>
-                    Designed APIs and implemented Service Bus for message queuing and Cosmos DB for storage. 
-                    Created API Management solutions for validation, routing, and authentication. Supported production deployment and created documentation on Azure wiki.
-                </p>
-            </div>
-
-            <div class="project-details">
-                <h4>Honeywell Worker Assist</h4>
-                <p><strong>Client:</strong> Honeywell Technology Solutions Lab</p>
-                <p>
-                    Developed Microservice APIs, implemented Selenium scripts for testing, and worked on JMeter for performance. Created SQL queries and supported production systems.
-                </p>
-            </div>
-
-            <div class="project-details">
-                <h4>Zen3 Infosolutions Pvt Ltd - Wrapstar Client</h4>
-                <p><strong>Role:</strong> Developer</p>
-                <p>
-                    Created data extraction models and implemented rules for various business requirements in a desktop application.
-                </p>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <p>© 2024 Sai Kumar. D | All Rights Reserved</p>
-        </footer>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer>
+        <p>© 2024 Sai Kumar. D | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
