@@ -3,123 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Sai Kumar. D</title>
+    <title>Sai Kumar. D - Senior Software Engineer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
         }
         header {
-            background: #0073e6;
+            background-color: #007acc;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
         }
-        section {
-            max-width: 800px;
+        main {
+            max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
-        section h2 {
-            border-bottom: 2px solid #0073e6;
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007acc;
+            border-bottom: 2px solid #007acc;
             padding-bottom: 5px;
-            margin-bottom: 15px;
         }
         ul {
-            list-style-type: none;
-            padding: 0;
+            list-style-type: disc;
+            margin: 10px 0 10px 20px;
         }
-        ul li {
-            margin-bottom: 10px;
+        li {
+            margin-bottom: 5px;
+        }
+        .project {
+            margin-bottom: 15px;
+        }
+        .project h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #555;
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            font-size: 14px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #0073e6;
+            margin-top: 20px;
+            color: #666;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Sai Kumar. D</h1>
-        <p><strong>Email:</strong> saiprakash837@gmail.com | <strong>Phone:</strong> 9492741090</p>
+        <p>Senior Software Engineer | Azure Developer | Solution Architect Aspirant</p>
+        <p>Email: saikumar@example.com | Phone: +91-9876543210</p>
     </header>
-    
-    <section>
-        <h2>Objective</h2>
-        <p>
-            Seeking a challenging and impactful opportunity where I can leverage my strengths and contribute effectively to a professional organization. 
-            With a keen desire to exceed employer expectations, I aim to explore new avenues for growth and innovation.
-        </p>
-    </section>
 
-    <section>
-        <h2>Summary</h2>
-        <ul>
-            <li>Proficient in <span class="highlight">.NET Framework, .NET Core, and Azure technologies</span>.</li>
-            <li>Experienced in <span class="highlight">C#, SQL Server, Cosmos DB, and Azure API Management</span>.</li>
-            <li>Skilled in application development, UI design, and implementation.</li>
-            <li>Strong expertise in <span class="highlight">Agile methodologies</span> and Continuous Integration (CI).</li>
-        </ul>
-    </section>
+    <main>
+        <section>
+            <h2>Summary</h2>
+            <p>
+                Highly skilled Senior Software Engineer with 7+ years of experience in .NET technologies, Azure services, and application development. 
+                Passionate about designing scalable solutions and aspiring to become a Solution Architect.
+            </p>
+        </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>IDEs & Tools:</strong> Visual Studio, SQL Server Management Studio, Visual Studio Code</li>
-            <li><strong>Languages:</strong> C#</li>
-            <li><strong>Web Technologies:</strong> ASP.NET, MVC, ADO.NET, Entity Framework</li>
-            <li><strong>Azure Services:</strong> API Management, Service Fabric, Service Bus</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C#, VB.NET, ASP.NET Core</li>
+                <li>Frontend: HTML, CSS, jQuery, Infragistics, Flatpickr</li>
+                <li>Databases: SQL Server, Azure Cosmos DB, Oracle (Learning)</li>
+                <li>Cloud Services: Azure API Management, Azure Service Bus, Key Vault</li>
+                <li>Tools: Visual Studio, Scriptable, ILogger</li>
+                <li>Frameworks: .NET Core 8, Bot Framework</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>Ryder Transport</h3>
-        <ul>
-            <li><strong>Client:</strong> Ryder</li>
-            <li><strong>Duration:</strong> Jan 2023 – May 2024</li>
-            <li><strong>Technologies:</strong> C#, .NET Core Web API, Azure Service Fabric, Cosmos DB</li>
-            <li>Developed and maintained order processes with Service Bus and API management.</li>
-        </ul>
-        
-        <h3>Honeywell Worker Assist</h3>
-        <ul>
-            <li><strong>Client:</strong> Honeywell</li>
-            <li><strong>Role:</strong> Product Specialist</li>
-            <li><strong>Technologies:</strong> .NET, Azure, PostgreSQL</li>
-        </ul>
+        <section>
+            <h2>Projects</h2>
 
-        <h3>Quattro</h3>
-        <ul>
-            <li><strong>Client:</strong> MedRisk</li>
-            <li><strong>Role:</strong> Product Specialist</li>
-            <li><strong>Technologies:</strong> ASP.NET MVC, SQL Server</li>
-        </ul>
-    </section>
+            <div class="project">
+                <h3>Honeywell Forge Operations Management (HFOM)</h3>
+                <ul>
+                    <li><strong>Client:</strong> Honeywell</li>
+                    <li><strong>Duration:</strong> Jan 2023 – May 2024</li>
+                    <li><strong>Technologies:</strong> .NET Core, Azure Service Bus, Cosmos DB</li>
+                    <li>Developed microservices for real-time operations management using Azure, ensuring high availability and performance.</li>
+                </ul>
+            </div>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>B.Tech in Electronics and Communication</strong><br> Ramachandra College of Engineering, Eluru (2015)</p>
-    </section>
+            <div class="project">
+                <h3>Ryder Transport Management</h3>
+                <ul>
+                    <li><strong>Client:</strong> Ryder</li>
+                    <li><strong>Duration:</strong> Jan 2021 – Dec 2022</li>
+                    <li><strong>Technologies:</strong> ASP.NET Core, Service Fabric, API Management</li>
+                    <li>Designed APIs enabling seamless integration between logistics systems and partners, optimizing supply chain workflows.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>MedRisk Quattro System</h3>
+                <ul>
+                    <li><strong>Client:</strong> MedRisk</li>
+                    <li><strong>Duration:</strong> Aug 2019 – Dec 2020</li>
+                    <li><strong>Technologies:</strong> ASP.NET MVC, SQL Server</li>
+                    <li>Implemented features for efficient handling of medical risk assessments and automated insurance claim workflows.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Asset Management Tool</h3>
+                <ul>
+                    <li><strong>Client:</strong> Internal</li>
+                    <li><strong>Duration:</strong> Feb 2018 – Jul 2019</li>
+                    <li><strong>Technologies:</strong> C#, WinForms, SQL Server</li>
+                    <li>Created an internal tool to streamline asset tracking, reporting, and management for the organization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Technology in Computer Science, XYZ University, Graduated 2016</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified: Azure Developer Associate</li>
+                <li>Microsoft Certified: Azure Solutions Architect Expert (in progress)</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Sai Kumar. D | All Rights Reserved</p>
+        <p>&copy; 2024 Sai Kumar. D. All rights reserved.</p>
     </footer>
 </body>
 </html>
