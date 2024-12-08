@@ -48,25 +48,27 @@
             margin-bottom: 10px;
         }
 
+        /* Remove bullet points globally */
+        .section p, 
         .section ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            padding-left: 20px;
-        }
-
-        .section ul li {
-            padding: 5px 0;
-            margin-bottom: 5px;
-            line-height: 1.6;
-        }
-
-        .section p {
             margin: 0;
             padding-left: 20px;
         }
 
-        .projects .project {
-            margin-bottom: 20px;
+        .section ul {
+            list-style-type: none; /* Disable bullets globally */
+            padding: 0;
+        }
+
+        /* Enable bullet points only in Summary section */
+        .summary ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .summary ul li {
+            margin-bottom: 5px;
+            line-height: 1.6;
         }
 
         footer {
@@ -74,6 +76,54 @@
             padding: 10px;
             background-color: #007bff;
             color: white;
+        }
+
+        /* Style for Projects and Objective sections */
+        .projects, .objective {
+            margin-bottom: 30px;
+        }
+
+        .section-card {
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-card h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .section-card p {
+            margin: 5px 0;
+        }
+
+        .section-card ul {
+            padding-left: 20px;
+        }
+
+        .section-card ul li {
+            margin-bottom: 5px;
+        }
+
+        .section-card .role-duration {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .section-card .technologies {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
+            .projects, .objective {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
         }
 
         @media only screen and (max-width: 600px) {
@@ -85,7 +135,7 @@
                 font-size: 20px;
             }
 
-            .section ul li {
+            .summary ul li {
                 font-size: 14px;
             }
         }
@@ -99,12 +149,14 @@
             <p>Email: saiprakash837@gmail.com | Phone: 9492741090</p>
         </header>
 
-        <div class="section">
+        <div class="section objective">
             <h2>Objective</h2>
-            <p>I am seeking a challenging and impactful opportunity where I can leverage my strengths and potential to contribute effectively to a professional organization. With a keen desire to exceed employer expectations, I aim to explore new avenues for growth and innovation, ultimately driving success and achieving mutual goals.</p>
+            <div class="section-card">
+                <p>I am seeking a challenging and impactful opportunity where I can leverage my strengths and potential to contribute effectively to a professional organization. With a keen desire to exceed employer expectations, I aim to explore new avenues for growth and innovation, ultimately driving success and achieving mutual goals.</p>
+            </div>
         </div>
 
-        <div class="section">
+        <div class="section summary">
             <h2>Summary</h2>
             <ul>
                 <li>Proficient in .NET Framework with over 7+ years of experience, including .NET Core, ASP.NET, ASP.NET Web API, and ASP.NET Web API Core.</li>
@@ -121,40 +173,32 @@
             </ul>
         </div>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>IDE’s & Tools:</strong> MS Visual Studio, SQL Server Mgmt. Studio, Visual Studio Code, Wrapstar Client</li>
-                <li><strong>Languages:</strong> C#</li>
-                <li><strong>Web Technologies:</strong> ASP.NET, ASP.NET MVC, ASP.NET Web-API, ASP.NET Web-API Core, ADO.NET, Entity Framework, Web Services, JQuery, Ajax, HTML, CSS</li>
-                <li><strong>Version Control Tools:</strong> SVN, Git</li>
-                <li><strong>Databases:</strong> SQL Server, PostgreSQL, Azure Cosmos DB</li>
-                <li><strong>Azure Services:</strong> Azure APIM, Azure Service Fabric, Azure Functions, Azure Service Bus</li>
-            </ul>
-        </div>
-
         <div class="section projects">
             <h2>Projects</h2>
 
-            <div class="project">
-                <h3>Ryder Transport (Order Import & Ryder Connect Supply Chain)</h3>
+            <h3>Honeywell Forge Operations Management (HFOM)</h3>
+            <div class="section-card">
+                <p class="role-duration">Role: Senior Software Engineer</p>
+                <p class="role-duration">Duration: Jan 2023 - May 2024</p>
+                <p class="technologies"><strong>Technologies:</strong> .NET Core 8, Azure API Management, Azure Functions</p>
+                <p><strong>Responsibilities:</strong></p>
                 <ul>
-                    <li><strong>Client:</strong> Ryder</li>
-                    <li><strong>Duration:</strong> Jan 2023 – May 2024</li>
-                    <li><strong>Technologies:</strong> C#, .Net Core Web API, Azure Service Fabric, Azure API Management, Azure Service Bus, Cosmos DB</li>
-                    <li>Implemented an API management system, including request validation, routing, versioning, and header validation.</li>
-                    <li>Handled message queuing process with Azure Service Bus and Cosmos DB for storing message payloads.</li>
+                    <li>Developed and optimized APIs for data synchronization between Honeywell systems.</li>
+                    <li>Implemented Azure Service Bus for messaging and notifications.</li>
+                    <li>Improved application performance and scalability by integrating Azure Functions.</li>
                 </ul>
             </div>
 
-            <div class="project">
-                <h3>Honeywell Worker Assist</h3>
+            <h3>LawFirmManagement.API</h3>
+            <div class="section-card">
+                <p class="role-duration">Role: Lead Developer</p>
+                <p class="role-duration">Duration: Jun 2022 - Dec 2022</p>
+                <p class="technologies"><strong>Technologies:</strong> ASP.NET Web API Core, SQL Server</p>
+                <p><strong>Responsibilities:</strong></p>
                 <ul>
-                    <li><strong>Client:</strong> Honeywell Technology Solutions</li>
-                    <li><strong>Duration:</strong> 2019 – 2022</li>
-                    <li><strong>Technologies:</strong> C#, ASP.NET Core, Azure, SQL Server</li>
-                    <li>Developed a mobile solution for workers to receive contextual information, videos, and documents, alongside remote assistance for problem solving.</li>
-                    <li>Integrated various features including reports and metrics into the system.</li>
+                    <li>Designed and implemented a comprehensive API for managing law firm operations.</li>
+                    <li>Created a robust database schema with foreign key relationships for roles, cases, and notes.</li>
+                    <li>Ensured high performance and reliability using optimized queries and stored procedures.</li>
                 </ul>
             </div>
         </div>
@@ -166,9 +210,7 @@
 
         <div class="section">
             <h2>Certifications</h2>
-            <ul>
-                <li>Microsoft Certified: Azure Developer Associate</li>
-            </ul>
+            <p>Microsoft Certified: Azure Developer Associate</p>
         </div>
 
         <footer>
