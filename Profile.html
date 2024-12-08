@@ -49,12 +49,15 @@
         }
 
         .section ul {
-            list-style: none;
-            padding: 0;
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 20px;
         }
 
         .section ul li {
             padding: 5px 0;
+            margin-bottom: 5px;
+            line-height: 1.6;
         }
 
         .section ul li strong {
@@ -71,16 +74,6 @@
             background-color: #007bff;
             color: white;
         }
-.section ul {
-    list-style-type: disc; /* Ensures bullets are shown */
-    margin-left: 20px; /* Adds left indentation for better readability */
-    padding-left: 20px; /* Adjusts inner spacing */
-}
-
-.section ul li {
-    margin-bottom: 5px; /* Adds spacing between bullet points */
-    line-height: 1.6; /* Improves readability */
-}
 
         @media only screen and (max-width: 600px) {
             header h1 {
@@ -111,22 +104,21 @@
         </div>
 
         <div class="section">
-    <h2>Summary</h2>
-    <ul>
-        <li>Proficient in .NET Framework with over 7+ years of experience, including .NET Core, ASP.NET, ASP.NET Web API, and ASP.NET Web API Core.</li>
-        <li>Skilled in Azure technologies such as Azure API Management, Azure Service Fabric, Azure Functions, and Azure Service Bus.</li>
-        <li>Experienced in C#, SQL Server, Cosmos DB, AJAX, Web Services, Windows Services, JSON, and XML.</li>
-        <li>Familiarity with HTML, CSS3, and design frameworks like Foundation.</li>
-        <li>Expertise in Application Development, UI Design, and Implementation.</li>
-        <li>Self-motivated, adaptable, and result-oriented, able to thrive in fast-paced environments.</li>
-        <li>Strong problem-solving, analytical, and interpersonal skills.</li>
-        <li>Adherence to coding standards with a track record of timely project completion.</li>
-        <li>Proficient in the full software development lifecycle, including documentation, analysis, development, unit testing, and maintenance.</li>
-        <li>Skilled in version control systems such as SVN and GitHub, with experience in merging and conflict resolution in GIT.</li>
-        <li>Experience with Continuous Integration (CI) and Agile methodologies for project development.</li>
-    </ul>
-</div>
-
+            <h2>Summary</h2>
+            <ul>
+                <li>Proficient in .NET Framework with over 7+ years of experience, including .NET Core, ASP.NET, ASP.NET Web API, and ASP.NET Web API Core.</li>
+                <li>Skilled in Azure technologies such as Azure API Management, Azure Service Fabric, Azure Functions, and Azure Service Bus.</li>
+                <li>Experienced in C#, SQL Server, Cosmos DB, AJAX, Web Services, Windows Services, JSON, and XML.</li>
+                <li>Familiarity with HTML, CSS3, and design frameworks like Foundation.</li>
+                <li>Expertise in Application Development, UI Design, and Implementation.</li>
+                <li>Self-motivated, adaptable, and result-oriented, able to thrive in fast-paced environments.</li>
+                <li>Strong problem-solving, analytical, and interpersonal skills.</li>
+                <li>Adherence to coding standards with a track record of timely project completion.</li>
+                <li>Proficient in the full software development lifecycle, including documentation, analysis, development, unit testing, and maintenance.</li>
+                <li>Skilled in version control systems such as SVN and GitHub, with experience in merging and conflict resolution in GIT.</li>
+                <li>Experience with Continuous Integration (CI) and Agile methodologies for project development.</li>
+            </ul>
+        </div>
 
         <div class="section">
             <h2>Technical Skills</h2>
@@ -190,7 +182,7 @@
         <div class="section">
             <h2>Education</h2>
             <ul>
-                <li><strong>Bachelor of Technology in Electronics and communication</strong>, Ramachandra College of Engineering (ELURU), JNTU - Kakinada University, Graduated 2015</li>
+                <li><strong>Bachelor of Technology in Electronics and Communication</strong>, Ramachandra College of Engineering (ELURU), JNTU - Kakinada University, Graduated 2015</li>
             </ul>
         </div>
 
@@ -198,7 +190,6 @@
             <h2>Certifications</h2>
             <ul>
                 <li>Microsoft Certified: Azure Developer Associate</li>
-                <!--<li>Microsoft Certified: Azure Solutions Architect Expert (in progress)</li>-->
             </ul>
         </div>
 
@@ -207,7 +198,7 @@
         </footer>
     </div>
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
