@@ -192,8 +192,11 @@
         </div>
 
         <footer>
-            <p>&copy; 2024 Sai Kumar D. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span> Sai Kumar. D. All rights reserved.</p>
         </footer>
     </div>
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
